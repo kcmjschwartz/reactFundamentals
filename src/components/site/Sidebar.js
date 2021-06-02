@@ -5,9 +5,10 @@ import {
 } from 'react-router-dom';
 import Home from './Home';
 import Resources from './Resources';
-import FunctionalComponentDemo from '../concepts/FunctionalComponents/FunctionalComponentDemo';
-import JSXRules from '../concepts/JSXRules/JSXRules';
-import State from '../concepts/State/State'
+import FunctionalComponentDemo from '../concepts/FunctionalComponentDemo';
+import JSXRules from '../concepts/JSXRules';
+import State from '../concepts/State';
+import Effects from '../concepts/Effects';
 
 const Sidebar = () => {
     return(
@@ -19,6 +20,7 @@ const Sidebar = () => {
                     <li><Link to='/functionalcomponent'>Functional Component</Link></li>
                     <li><Link to = '/jxrules'>JSX Rules</Link></li>
                     <li><Link to = '/state'>useState</Link></li>
+                    <li><Link to = '/effects'>useEffect</Link></li>
                 </ul>
             </div>
             <div className='sidebar-route'>
@@ -29,6 +31,7 @@ const Sidebar = () => {
                     <Route exact path='/functionalcomponent'><FunctionalComponentDemo /></Route>
                     <Route exact path='/jxrules'><JSXRules /></Route>
                     <Route exact path='/state'><State /></Route>
+                    <Route exact path='/effects'><Effects /></Route>
                 </Switch>
             </div>
         </div>
