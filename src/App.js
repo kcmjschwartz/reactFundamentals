@@ -14,12 +14,11 @@ import {
 function App() {
   return (
     <div className="App">
-     <Header />
-     <Router>
-       <Sidebar />
-     </Router>
-     <Footer />
-     
+    <Header />
+    <Router>
+      <Sidebar />
+    </Router>
+    <Footer />
     </div>
   );
 }
