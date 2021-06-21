@@ -13,6 +13,8 @@ import PropsDemo from '../concepts/PropsDemo';
 import Hooks from '../concepts/Hooks';
 import TimePiecesApp from '../apps/timer-apps/TimePiecesApp'
 import NytApp from '../apps/nty-app/NytApp'
+import ClassComponentDemo from '../concepts/ClassComponentDemo';
+import ClassComponentsProps from '../concepts/ClassComponentsProps';
 
 const Sidebar = () => {
     return(
@@ -29,6 +31,8 @@ const Sidebar = () => {
                     <li><Link to = '/hooks'>Hooks</Link></li>
                     <li><Link to = '/timepiecesapp'>Timers</Link></li>
                     <li><Link to = '/nyt-app'>NYT App</Link></li>
+                    <li><Link to = '/classcomponentsdemo'>Class Components Demo</Link></li>
+                    <li><Link to = '/classcomponentsprops'>Class Components Props</Link></li>
                 </ul>
             </div>
             <div className='sidebar-route'>
@@ -44,6 +48,8 @@ const Sidebar = () => {
                     <Route exact path='/hooks'><Hooks /></Route>
                     <Route exact path='/timepiecesapp'><TimePiecesApp /></Route>
                     <Route exact path='/nyt-app'><NytApp /></Route>
+                    <Route exact path = '/classcomponentsdemo'><ClassComponentDemo /></Route>
+                    <Route exact path='/classcomponentsprops'><ClassComponentsProps /></Route>
                 </Switch>
             </div>
         </div>
